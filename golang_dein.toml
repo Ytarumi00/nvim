@@ -1,0 +1,8 @@
+[[plugins]]
+repo = 'zchee/deoplete-go'
+
+[[plugins]]
+repo = 'benekastah/neomake'
+
+[[plugins]]
+repo = 'fatih/vim-go'
