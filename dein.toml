@@ -1,0 +1,133 @@
+[[plugins]]
+repo = 'flazz/vim-colorschemes'
+
+[[plugins]]
+repo = 'atelierbram/Base2Tone-vim'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_source = '''
+  nnoremap [denite] <Nop>
+  nmap <space>d [denite]
+  nnoremap [denite]f :Denite file_rec<cr>
+'''
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'skywind3000/asyncrun.vim'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+#[[plugins]]
+#repo = 'tell-k/vim-autopep8'
+#on_ft = ['python']
+#hook_source = '''
+#augroup autopep8
+#	autocmd!
+#	autocmd FileType python let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+#	autocmd FileType python nnoremap <s-f> :Autopep8<cr>
+#augroup END
+#'''
+
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_source = '''
+  let g:indent_guides_enable_on_vim_startup = 1
+'''
+
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+depends = ['nerdtree', 'vim-fugitive']
+hook_source = '''
+  let g:NERDTreeHijackNetrw = 0
+  noremap <space>n :NERDTreeToggle<cr>
+'''
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_source = '''
+  let g:lightline = {
+        \ 'colorscheme': 'wombat',
+        \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+        \},
+        \ 'component': {
+        \   'readonly': '%{&filetype=="help"?"":&readonly?"?":""}',
+        \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"""}',
+        \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+        \},
+        \ 'component_visible_condition': {
+        \   'readonly': '(&filetype!="help"&& &readonly)',
+        \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+        \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+        \ },
+        \ 'separator': { 'left': '>', 'right': '<' },
+        \ 'subseparator': { 'left': '>', 'right': '<' }
+        \ }
+'''
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'vim-scripts/ShowMarks7'
+
+[[plugins]]
+repo = 'vim-scripts/myprojects'
+hook_source = '''
+  let g:myprojects_auto_open = 0
+  noremap <silent><leader><leader>p :MyProjectsToggle<cr>
+'''
+
+[[plugins]]
+repo = 'vim-scripts/tabpage.vim'
+
+[[plugins]]
+repo = 't9md/vim-quickhl' 
+hook_source = '''
+  nmap <Space>m <Plug>(quickhl-manual-this)
+  xmap <Space>m <Plug>(quickhl-manual-this)
+  nmap <Space>M <Plug>(quickhl-manual-reset)
+  xmap <Space>M <Plug>(quickhl-manual-reset)
+  let g:quickhl_manual_colors = [
+          \ "gui=bold ctermfg=7   ctermbg=1   guibg=#a07040 guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=2   guibg=#4070a0 guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=3   guibg=#40a070 guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=4   guibg=#70a040 guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=5   guibg=#0070e0 guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=6   guibg=#007020 guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=21  guibg=#d4a00d guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=22  guibg=#06287e guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=45  guibg=#5b3674 guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=16  guibg=#4c8f2f guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=50  guibg=#1060a0 guifg=#ffffff",
+          \ "gui=bold ctermfg=7   ctermbg=56  guibg=#a0b0c0 guifg=black",
+          \ ]
+'''
+
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
+on_idle = 1
+
+[[plugins]]
+repo = 'tpope/vim-speeddating'
+

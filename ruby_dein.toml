@@ -1,0 +1,5 @@
+[[plugins]]
+repo = "Shougo/deoplete-rct"
+
+[[plugins]]
+repo = "astashov/vim-ruby-debugger"
