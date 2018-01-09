@@ -147,6 +147,8 @@ augroup python
   autocmd!
 "  let s:autopep8 = expand(g:rc_dir . )
   autocmd FileType python execute ":source " . expand(g:rc_dir . 'autopep8.vim')
+  autocmd FileType python execute ":set tabstop=4"
+  autocmd FileType python execute ":set shiftwidth=4"
 augroup END
 
 
