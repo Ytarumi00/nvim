@@ -3,3 +3,6 @@ repo = "Shougo/deoplete-rct"
 
 [[plugins]]
 repo = "astashov/vim-ruby-debugger"
+
+[[plugins]]
+repo = "tpope/vim-rails"
