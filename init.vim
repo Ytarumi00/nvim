@@ -93,7 +93,6 @@ let g:deoplete#enable_at_startup = 1
 "{{{my-keymap
 noremap <Space>ss : <C-u>source $HOME/.config/nvim/init.vim<CR>
 nmap <Esc><Esc> :nohlsearch<cr>
-nmap <C-c> <Esc>
 "noremap <cr> o<Esc>
 inoremap <F2> <M-i>
 inoremap <F3> \\
