@@ -9,12 +9,17 @@ set expandtab
 set smarttab
 set smartindent
 set hlsearch
+set showmatch
 set wildmode=list:longest,full
 set incsearch
 set fileencodings+=cp932
 set scrolloff=999
 set termguicolors
 set nrformats=alpha,hex,bin "ignore octal when CTAL-A and CTAL-X
+set shiftround              "Round to multiple 'shiftwidth' when indent with '<' or'>
+set infercase               "Don't distinguish upper/lower case when completion
+set hidden                  "Hide instead of closing the buffer(keep undo hist)
+set switchbuf=useopen      "buffer open instead new open
 
 
 augroup editvimrc
