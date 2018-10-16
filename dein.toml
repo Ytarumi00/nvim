@@ -10,6 +10,8 @@ hook_source = '''
   nnoremap [denite] <Nop>
   nmap <space>d [denite]
   nnoremap [denite]f :Denite file_rec<cr>
+  nnoremap [denite]h :Denite help<cr>
+  nnoremap [denite]b :Denite buffer<cr>
 '''
 
 [[plugins]]
@@ -133,3 +135,6 @@ repo = 'tpope/vim-speeddating'
 
 [[plugins]]
 repo = 'joonty/vdebug'
+
+[[plugins]]
+repo = 'vim-scripts/dbext.vim'

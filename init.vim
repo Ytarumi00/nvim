@@ -9,12 +9,17 @@ set expandtab
 set smarttab
 set smartindent
 set hlsearch
+set showmatch
 set wildmode=list:longest,full
 set incsearch
 set fileencodings+=cp932
 set scrolloff=999
 set termguicolors
 set nrformats=alpha,hex,bin "ignore octal when CTAL-A and CTAL-X
+set shiftround              "Round to multiple 'shiftwidth' when indent with '<' or'>
+set infercase               "Don't distinguish upper/lower case when completion
+set hidden                  "Hide instead of closing the buffer(keep undo hist)
+set switchbuf=useopen      "buffer open instead new open
 
 
 augroup editvimrc
@@ -93,7 +98,6 @@ let g:deoplete#enable_at_startup = 1
 "{{{my-keymap
 noremap <Space>ss : <C-u>source $HOME/.config/nvim/init.vim<CR>
 nmap <Esc><Esc> :nohlsearch<cr>
-nmap <C-c> <Esc>
 "noremap <cr> o<Esc>
 inoremap <F2> <M-i>
 inoremap <F3> \\
