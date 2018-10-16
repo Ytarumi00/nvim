@@ -131,3 +131,5 @@ on_idle = 1
 [[plugins]]
 repo = 'tpope/vim-speeddating'
 
+[[plugins]]
+repo = 'joonty/vdebug'
