@@ -23,3 +23,14 @@ hook_source = '''
   let g:neomake_python_enabled_makers = ['python', 'flake8']
 '''
 
+[[plugins]]
+repo = 'tell-k/vim-autopep8'
+on_ft = ['python']
+hook_source = '''
+augroup autopep8
+	autocmd!
+	autocmd FileType python let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+	autocmd FileType python nnoremap <s-f> :Autopep8<cr>
+augroup END
+'''
+
