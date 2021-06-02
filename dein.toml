@@ -141,3 +141,11 @@ repo = 'vim-scripts/dbext.vim'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'mattn/vim-gist'
+depends = 'mattn/webapi-vim'
+hook_source = '''
+  let g:github_user='[username]'
+  let g:gist_token='[personal access tokens]'
+'''
